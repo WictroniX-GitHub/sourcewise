@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
     <!-- PAGE TITLE HERE -->
-    <title>Industro Template | Services Detail</title>
+    <title>SourceWise | Services Detail</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,36 +70,47 @@
     <div class="page-wraper">
 
         <!-- HEADER START -->
-        <header class="site-header header-style-2 mobile-sider-drawer-menu">
-
-            <div class="top-bar site-bg-secondry">
+        <header class="site-header header-style-4 mobile-sider-drawer-menu wide-navigation">
+            <div class="top-bar">
                 <div class="container">
-
-                    <div class="d-flex justify-content-between">
-                        <div class="wt-topbar-left d-flex flex-wrap align-content-start">
-                            <ul class="wt-topbar-info e-p-bx text-white">
-                                <li><span> Monday - Saturday</span><span>8AM -7PM</span></li>
-                            </ul>
-                        </div>
+                    <div class="d-flex justify-content-end">
+                        <!-- <div class="wt-topbar-left d-flex flex-wrap align-content-start">
+                                  <ul class="wt-topbar-info e-p-bx text-white">
+                                      <li><span> Monday - Saturday</span><span>8AM -7PM</span></li>
+                                  </ul>
+                              </div> -->
 
                         <div class="wt-topbar-right d-flex flex-wrap align-content-center">
                             <ul class="wt-topbar-info-2 e-p-bx text-white">
-                                <li><i class="fa fa-phone"></i>+1(519)-722-2412</li>
-                                <li><i class="fa fa-envelope"></i>info.sourcewise@gmail.com</li>
+                                <li>
+                                    <a href="tel:+1(519)-722-2412" class="text-white">
+                                        <i class="fa fa-phone"></i>
+                                        <span>+1(519)-722-2412</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info.sourcewise@gmail.com" class="text-white">
+                                        <i class="fa fa-envelope"></i>
+                                        <span>info.sourcewise@gmail.com</span>
+                                    </a>
+                                </li>
                             </ul>
 
-
-
+                            <!-- <ul class="social-icons">
+                                          <li><a href="javascript:void(0);" class="fa fa-google"></a></li>
+                                          <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
+                                          <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                                          <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                                          <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+                                      </ul> -->
                         </div>
                     </div>
-
                 </div>
             </div>
 
-            <div class="sticky-header main-bar-wraper  navbar-expand-lg">
+            <div class="sticky-header main-bar-wraper navbar-expand-lg">
                 <div class="main-bar">
                     <div class="container clearfix">
-
                         <div class="logo-header">
                             <div class="logo-header-inner logo-header-one">
                                 <a href="index.html">
@@ -119,37 +130,43 @@
 
                         <div class="extra-nav header-2-nav">
                             <div class="extra-cell">
-
                                 <div class="header-nav-request">
-                                    <a href="#" class="contact-slide-show">Request a Quote <i
-                                            class="fa fa-angle-right"></i></a>
+                                    <a href="#" class="contact-slide-show request-quote rounded-pill">
+                                        Request a Quote
+                                        <!-- <i class="fa fa-angle-right"></i> -->
+                                    </a>
                                 </div>
-
                             </div>
-
                         </div>
 
-
                         <!-- MAIN Vav -->
-                        <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center">
+                        <div
+                            class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center py-3">
                             <ul class="nav navbar-nav">
                                 <li><a href="./index.html">Home</a></li>
 
-                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./about.html">About Us</a></li>
                                 <li><a href="./services.html">Services</a></li>
-                                <li>
-                                    <a href="./contact.html">Contact</a>
-                                </li>
+                                <li><a href="./gallery.html">Gallery</a></li>
+                                <li><a href="./contact.html">Contact Us</a></li>
                             </ul>
                         </div>
-
-
-
                     </div>
                 </div>
-
             </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const currentPage = window.location.href;
+                    const links = document.querySelectorAll(".nav.navbar-nav li a");
 
+                    links.forEach((link) => {
+                        // Check if the link's href matches the current page's URL
+                        if (link.href === currentPage) {
+                            link.classList.add("active");
+                        }
+                    });
+                });
+            </script>
         </header>
         <!-- HEADER END -->
 
@@ -163,15 +180,16 @@
                     <div class="wt-bnr-inr-entry">
                         <div class="banner-title-outer">
                             <div class="banner-title-name">
-                                <h2 class="site-text-primary">Service Detail</h2>
+                                <h2 class="site-text-yellow">Service Detail</h2>
                             </div>
                         </div>
                         <!-- BREADCRUMB ROW -->
 
                         <div>
                             <ul class="wt-breadcrumb breadcrumb-style-2">
-                                <li><a href="javascript:void(0);">Home</a></li>
-                                <li>Service Detail</li>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                                <li>Ancillary</li>
                             </ul>
                         </div>
 
@@ -212,7 +230,7 @@
                                             <strong class="text-uppercase text-black">Download .PDF</strong>
                                         </a>
                                     </div>
-                                    <div class="wt-icon-box-wraper left">
+                                    <!-- <div class="wt-icon-box-wraper left">
                                         <a href="#" class="btn-block  p-a15 m-tb10">
                                             <span class="text-black m-r10"><i class="fa fa-file-word-o"></i></span>
                                             <strong class="text-uppercase text-black"> Download .DOC</strong>
@@ -224,7 +242,7 @@
                                                     class="fa fa-file-powerpoint-o"></i></span>
                                             <strong class="text-uppercase text-black">Download .PPT</strong>
                                         </a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -333,17 +351,22 @@
                                                     <h4 class="acod-title">
                                                         <a data-toggle="collapse" href="#collapseOne5"
                                                             data-parent="#accordion5">
-                                                            What problems we face?<span class="indicator"><i
-                                                                    class="fa fa-plus"></i></span>
+                                                            What types of projects does SourceWise specialize in
+                                                            executing?
+                                                            <span class="indicator"><i class="fa fa-plus"></i></span>
                                                         </a>
                                                     </h4>
                                                 </div>
                                                 <div id="collapseOne5" class="acod-body collapse show bg-gray">
-                                                    <div class="acod-content p-a15">There are many variations of
-                                                        passages of Lorem Ipsum available, but the majority have
-                                                        suffered alteration in some form, injected humour, or randomised
-                                                        words which don't look even slightly believablThere are many
-                                                        variations of passages.</div>
+                                                    <div class="acod-content p-a15">
+                                                        SourceWise specializes in transforming project blueprints into
+                                                        tangible outcomes across a diverse range of industries and
+                                                        sectors. Whether it's manufacturing machinery parts,
+                                                        constructing infrastructure components, or developing innovative
+                                                        products, our hands-on approach ensures that every project,
+                                                        regardless of size or complexity, is executed with precision and
+                                                        efficiency.
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="panel wt-panel">
@@ -351,16 +374,23 @@
                                                     <h4 class="acod-title">
                                                         <a data-toggle="collapse" href="#collapseTwo5" class="collapsed"
                                                             data-parent="#accordion5">
-                                                            Was our solution best?<span class="indicator"><i
-                                                                    class="fa fa-plus"></i></span>
+                                                            How does SourceWise ensure precision and efficiency in
+                                                            project execution?
+                                                            <span class="indicator"><i class="fa fa-plus"></i></span>
                                                         </a>
                                                     </h4>
                                                 </div>
                                                 <div id="collapseTwo5" class="acod-body collapse bg-gray">
-                                                    <div class="acod-content p-a15">Graphic design lorem Ipsum is simply
-                                                        dummy text of the printing and type setting industry. Lorem
-                                                        Ipsum has been the industry's standard dummy text ever since the
-                                                        when an unknown printer took.</div>
+                                                    <div class="acod-content p-a15">
+                                                        At SourceWise, we take full ownership of the execution process,
+                                                        ensuring that every element of your project is realized with
+                                                        utmost precision and efficiency. Our team of experienced
+                                                        professionals meticulously oversees each stage of the project,
+                                                        from procurement and production to assembly and delivery. By
+                                                        closely monitoring every aspect of the process and leveraging
+                                                        our expertise, we guarantee that your project is executed to the
+                                                        highest standards of quality and performance.
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="panel wt-panel">
@@ -368,16 +398,24 @@
                                                     <h4 class="acod-title">
                                                         <a data-toggle="collapse" href="#collapseThree5"
                                                             class="collapsed" data-parent="#accordion5">
-                                                            Was our client satisfy?<span class="indicator"><i
-                                                                    class="fa fa-plus"></i></span>
+                                                            What sets SourceWise apart from other project execution
+                                                            providers?
+                                                            <span class="indicator"><i class="fa fa-plus"></i></span>
                                                         </a>
                                                     </h4>
                                                 </div>
                                                 <div id="collapseThree5" class="acod-body collapse bg-gray">
-                                                    <div class="acod-content p-a15">Developement lorem Ipsum is simply
-                                                        dummy text of the printing and type has been the industry's
-                                                        standard dummy text ever since the when an unknown printer took
-                                                        a galley of type and scrambled it to make.</div>
+                                                    <div class="acod-content p-a15">
+                                                        SourceWise stands out for its hands-on approach and commitment
+                                                        to excellence. Unlike traditional project execution providers,
+                                                        we don't just follow blueprints—we actively engage in the
+                                                        execution process, taking full ownership and responsibility for
+                                                        delivering tangible outcomes. Our proactive approach, combined
+                                                        with our dedication to precision and efficiency, ensures that
+                                                        your project is completed on time, within budget, and to your
+                                                        exact specifications. With SourceWise, you can trust that your
+                                                        project is in capable hands, from conception to completion.
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -395,7 +433,7 @@
         <!-- CONTENT END -->
 
         <!-- FOOTER START -->
-        <footer class="site-footer footer-large footer-dark text-white footer-style3">
+        <footer class="site-footer footer-large footer-dark text-white footer-style3 footer-animated">
             <!-- FOOTER BLOCKES START -->
             <div class="footer-top">
                 <div class="container" style="max-width:1300px">
@@ -406,11 +444,8 @@
                                     <a href="index.html"><img src="images/logo.png" alt="" /></a>
                                 </div>
                                 <p>
-                                    SourceWise has very good strength in innovative technology and tools with over 35
-                                    years of
-                                    experience. SourceWise has very good strength in innovative technology and tools
-                                    with over 35 years of
-                                    experience.
+                                    SourceWise has very good strength in innovative technology and tools with over 15+
+                                    years of experience.
                                 </p>
                             </div>
                         </div>
@@ -451,14 +486,30 @@
                             <div class="widget recent-posts-entry">
                                 <ul class="widget_address">
                                     <div class="ratio ratio-1x1">
-                                        <iframe src="https://maps.app.goo.gl/ULa4nEETL81LxBoa9" allowfullscreen=""
-                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2766.5366855194693!2d-64.8229008!3d46.1002119!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca0b8c7738c30e3%3A0xc8836134a792a01f!2s101%20McKenzie%20Ave%2C%20Moncton%2C%20NB%20E1C%208W9%2C%20Canada!5e0!3m2!1sen!2sin!4v1715160408009!5m2!1sen!2sin"
+                                            allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                     <li>
-                                        <i class="fa fa-map-marker"></i>101 McKenzie Ave, Moncton, NB E1C 8W9
+                                        <a href="https://maps.app.goo.gl/ULa4nEETL81LxBoa9" target="_blank"
+                                            class="text-white">
+                                            <i class="fa fa-map-marker"></i>
+                                            <span>101 McKenzie Ave, Moncton, NB E1C 8W9</span>
+                                        </a>
                                     </li>
-                                    <li><i class="fa fa-envelope"></i>info.sourcewise@gmail.com </li>
-                                    <li><i class="fa fa-phone"></i>+1(519)-722-2412</li>
+                                    <li>
+                                        <a href="mailto:info.sourcewise@gmail.com" class="text-white">
+                                            <i class="fa fa-envelope"></i>
+                                            <span>info.sourcewise@gmail.com</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+1(519)-722-2412" class="text-white">
+                                            <i class="fa fa-phone"></i>
+                                            <span>+1(519)-722-2412</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -468,20 +519,20 @@
                 </div>
             </div>
             <!-- FOOTER COPYRIGHT -->
-
-            <div class="footer-bottom">
+            <div class="footer-bottom copyright-animated text-center">
                 <div class="container">
-                    <div class="wt-footer-bot-left d-flex justify-content-between">
-                        <span class="copyrights-text">Copyright © 2020 <span
-                                class="site-text-primary">Thewebmax</span>&nbsp; || Powered by &nbsp;<a
-                                href="https://www.wictronix.com/" target="_blank"><img
+                    <div class="wt-footer-bot-left d-flex justify-content-center text-center">
+                        <span class="copyrights-text">
+                            Copyright © 2020
+                            <span>SourceWise</span> || Powered by &nbsp;<a href="https://www.wictronix.com/"
+                                target="_blank"><img
                                     style="width: 11rem; background-color: white; border-radius: 10px; padding: 8px"
                                     src="./images/wxlogo.png" alt="" /></a></span>
-                        <ul class="copyrights-nav">
-                            <li><a href="javascript:void(0);">Terms &amp; Condition</a></li>
-                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                            <li><a href="contact-1.html">Contact Us</a></li>
-                        </ul>
+                        <!-- <ul class="copyrights-nav">
+                              <li><a href="javascript:void(0);">Terms &amp; Condition</a></li>
+                              <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                              <li><a href="contact-1.html">Contact Us</a></li>
+                          </ul> -->
                     </div>
                 </div>
             </div>
@@ -489,17 +540,17 @@
         <!-- FOOTER END -->
 
         <!-- Get In Touch -->
-        <div class="contact-slide-hide bg-cover bg-no-repeat" style="background-image:url(images/background/bg-7.jpg)">
+        <div class="contact-slide-hide bg-cover bg-no-repeat" style="background-image: url(images/background/bg-7.jpg)">
             <div class="contact-nav">
                 <a href="javascript:void(0)" class="contact_close">&times;</a>
                 <div class="contact-nav-form">
                     <div class="contact-nav-info bg-white p-a30 bg-center bg-no-repeat"
-                        style="background-image:url(images/background/bg-map2.png);">
+                        style="background-image: url(images/background/bg-map2.png)">
                         <div class="row">
                             <div class="col-lg-4 col-md-4">
                                 <div class="contact-nav-media-section">
                                     <div class="contact-nav-media">
-                                        <img src="images/self-pic.png" alt="">
+                                        <img src="images/self-pic.png" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -514,28 +565,28 @@
                                             <div class="col-md-6 col-sm-6">
                                                 <div class="form-group">
                                                     <input name="username" type="text" required class="form-control"
-                                                        placeholder="Name">
+                                                        placeholder="Name" />
                                                 </div>
                                             </div>
 
                                             <div class="col-md-6 col-sm-6">
                                                 <div class="form-group">
                                                     <input name="email" type="text" class="form-control" required
-                                                        placeholder="Email">
+                                                        placeholder="Email" />
                                                 </div>
                                             </div>
 
                                             <div class="col-md-6 col-sm-6">
                                                 <div class="form-group">
                                                     <input name="phone" type="text" class="form-control" required
-                                                        placeholder="Phone">
+                                                        placeholder="Phone" />
                                                 </div>
                                             </div>
 
                                             <div class="col-md-6 col-sm-6">
                                                 <div class="form-group">
                                                     <input name="subject" type="text" class="form-control" required
-                                                        placeholder="Subject">
+                                                        placeholder="Subject" />
                                                 </div>
                                             </div>
 
@@ -550,7 +601,6 @@
                                                 <button type="submit" class="site-button site-btn-effect">Submit
                                                     Now</button>
                                             </div>
-
                                         </div>
                                     </div>
                                 </form>
@@ -563,8 +613,7 @@
                                             <div class="wt-icon-box-wraper left icon-shake-outer">
                                                 <div class="icon-content">
                                                     <h4 class="m-t0">Phone number</h4>
-                                                    <p>(456) 789 10 12</p>
-                                                    <p>(456) 789 10 15</p>
+                                                    <a href="tel:+1(519)-722-2412">+1(519)-722-2412</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -572,8 +621,8 @@
                                             <div class="wt-icon-box-wraper left icon-shake-outer">
                                                 <div class="icon-content">
                                                     <h4 class="m-t0">Email address</h4>
-                                                    <p>demo@gmail.com</p>
-                                                    <p>indusinfo@gmail.com</p>
+                                                    <a
+                                                        href="mailto:info.sourcewise@gmail.com">info.sourcewise@gmail.com</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -581,7 +630,9 @@
                                             <div class="wt-icon-box-wraper left icon-shake-outer">
                                                 <div class="icon-content">
                                                     <h4 class="m-t0">Address info</h4>
-                                                    <p>1363-1385 Sunset Blvd Los Angeles</p>
+                                                    <a href="https://maps.app.goo.gl/ULa4nEETL81LxBoa9" target="_blank">
+                                                        101 McKenzie Ave, Moncton, NB E1C 8W9
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -590,14 +641,12 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
 
         <!-- BUTTON TOP START -->
-        <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
-
+        <button class="scroltop relative" id="btn-vibrate"><span class="fa fa-angle-up"></span></button>
     </div>
 
     <!-- LOADING AREA START ===== -->
