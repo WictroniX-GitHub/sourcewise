@@ -25031,9 +25031,9 @@ ol.commentlist li .star-rating {
 	background-color: #095787;
 	opacity: 0;
 	border-radius: 100%;
-	top: -200%;
+	top: -225%;
 	left: -50%;
-	animation: footer-animation 10s infinite;
+	animation: footer-animation 5s infinite;
 }
 
 @keyframes footer-animation {
@@ -25043,8 +25043,8 @@ ol.commentlist li .star-rating {
 		opacity: 0.5;
 	}
 
-	25% {
-		height: 400%;
+	20% {
+		height: 450%;
 		aspect-ratio: 1/1;
 		opacity: 0.5;
 	}
