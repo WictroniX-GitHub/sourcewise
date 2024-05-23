@@ -12804,6 +12804,10 @@ button.scroltop span {
 	2. Section Content Part 
 -------------------------------------*/
 
+.carousel-item img {
+	height: 80vh;
+}
+
 .our-partner-carousel-button {
 	height: 50px;
 	width: 50px;
